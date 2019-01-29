@@ -2,6 +2,8 @@ var pressed = false;
 var lastRandomElement = [];
 var countElements = 5;
 var switchInterval;
+var speedSwitch = 100;
+var waitBeforeNextGenre = 5000;
 
 $(document).keypress(function(event){
     var keycode = (event.keyCode ? event.keyCode : event.which);
@@ -9,9 +11,9 @@ $(document).keypress(function(event){
         // pressed enter
         if (pressed == false) {
             pressed = true;
-            switchInterval = setInterval(switchElements, 220);
+            switchInterval = setInterval(switchElements, speedSwitch);
             $(".bg").removeClass("active");
-            setTimeout(randomGenre, 5000);
+            setTimeout(randomGenre, waitBeforeNextGenre);
         }
     }
 });
