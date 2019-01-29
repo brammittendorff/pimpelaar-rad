@@ -1,0 +1,214 @@
+ @font-face { font-family: 'Permanent Marker'; 
+  src: url('../font/marker.ttf'); 
+  } 
+
+ @font-face { font-family: 'Monoton'; 
+  src: url('../font/monoton.ttf'); 
+  } 
+
+ @font-face { font-family: 'Sniglet'; 
+  src: url('../font/sniglet.ttf'); 
+  } 
+
+ @font-face { font-family: 'Eczar'; 
+  src: url('../font/eczar.ttf'); 
+  } 
+
+
+.bg {
+    position: absolute;
+    display: none;
+    width: 100%;
+}
+
+.bg.active {
+    display: block;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Achtergrond gifjes per genre */
+.bgdiscodip {
+    background: url("../gif/image.gif") center;
+    background-size: cover; 
+    height: 100%;
+    text-align: center;
+
+}
+
+.bgshotje {
+    background: url("../gif/giphy-14.gif") center;
+    background-size: cover; 
+    height: 100%;
+    text-align: center;
+
+}
+
+.bgrock {
+    background: url("../gif/giphy-15.gif") center;
+    background-size: cover; 
+    height: 100%;
+    text-align: center;
+
+}
+
+.bgclassics {
+    background: url("../gif/giphy-17.gif") center;
+    background-size: cover; 
+    height: 100%;
+    text-align: center;
+}
+
+.bghakkuh {
+    background: url("../gif/giphy-14.gif") center;
+    background-size: cover; 
+    height: 100%;
+}
+
+.bgthuglife {
+    background: url("../gif/giphy-5.gif") center;
+    background-size: cover; 
+    height: 100%;
+}
+
+.bghouse {
+    background: url("../gif/giphy-6.gif") center;
+    background-size: cover; 
+    height: 100%;
+}
+
+
+.bgschuren {
+    background: url("../gif/giphy-7.gif") center;
+        background-size: cover; 
+
+    height: 100%;
+}
+
+
+.bgapresski {
+    background: url("../gif/giphy-12.gif") center;
+        background-size: cover; 
+
+    height: 100%;
+}
+
+
+
+/* Text effecten per genre */
+
+
+
+h1.thuglife {
+    font-size: 160px;
+    color: #ffffff;
+    text-shadow: 0px 10px #ff0000;
+    font-family: 'Permanent Marker', cursive;
+    
+
+}
+
+h1.house {
+    font-size: 160px;
+    color: #ffffff;
+    text-shadow: 0px 10px #144600;
+    font-family: 'Sniglet', cursive;
+       -webkit-text-stroke-width: 4px;
+   -webkit-text-stroke-color: #144600;
+}
+
+h1.schuren {
+    font-size: 160px;
+    color: #ffffff;
+    text-shadow: 0px 10px #570b56;
+    font-family: 'Sniglet', cursive;
+       -webkit-text-stroke-width: 4px;
+   -webkit-text-stroke-color: #920090;
+}
+
+h1.shotje {
+    font-size: 160px;
+    color: #ffffff;
+    text-shadow: 0px 10px #ff6c7a;
+    font-family: 'Sniglet', cursive;
+       -webkit-text-stroke-width: 4px;
+   -webkit-text-stroke-color: #920090;
+}
+
+
+h1.discodip {
+    font-size: 160px;
+    color: #ffffff;
+    font-family: 'Monoton', cursive;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 20px;
+    border: none;
+    text-align: center;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    text-shadow: 0 0 10px rgb(255,17,119) , 0 0 20px rgb(2255,17,119) , 0 0 30px rgb(255,17,119) , 0 0 40px rgb(255,17,119) , 0 0 70px rgb(255,17,119) , 0 0 80px rgb(255,17,119) , 0 0 100px rgb(255,17,119) , 0 0 150px rgb(255,17,119) ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+}
+
+
+h1.apresski {
+    font-size: 160px;
+    color: #ffffff;
+    text-shadow: 0px 10px #470404;
+    font-family: 'Eczar', cursive;
+       -webkit-text-stroke-width: 4px;
+   -webkit-text-stroke-color: #161c46;
+}
+
+h1.rock {
+    font-size: 160px;
+    color: #ffffff;
+    text-shadow: 0px 10px #2e0b8e;
+    font-family: 'Permanent Marker', cursive;
+}
+
+h1.hakkuh {
+    font-size: 160px;
+    color: #ffffff;
+    text-shadow: 0px 10px #ff6c7a;
+    font-family: 'Sniglet', cursive;
+       -webkit-text-stroke-width: 4px;
+   -webkit-text-stroke-color: #920090;
+}
+
+h1.classics {
+    font-size: 140px;
+    line-height: 120px;
+    color: #ffffff;
+    font-family: 'Monoton', cursive;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 20px;
+    border: none;
+    text-align: center;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    text-shadow: 0 0 10px rgb(255,17,119) , 0 0 20px rgb(2255,17,119) , 0 0 30px rgb(255,17,119) , 0 0 40px rgb(255,17,119) , 0 0 70px rgb(255,17,119) , 0 0 80px rgb(255,17,119) , 0 0 100px rgb(255,17,119) , 0 0 150px rgb(255,17,119) ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+}
