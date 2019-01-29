@@ -1,6 +1,7 @@
 var pressed = false;
 var lastRandomElement = [];
 var countElements = 5;
+var switchInterval;
 
 $(document).keypress(function(event){
     var keycode = (event.keyCode ? event.keyCode : event.which);
@@ -8,16 +9,26 @@ $(document).keypress(function(event){
         // pressed enter
         if (pressed == false) {
             pressed = true;
-            setTimeout(randomGenre, 500);
+            switchInterval = setInterval(switchElements, 200);
+            setTimeout(randomGenre, 1000);
         }
     }
 });
 
+var switchElements = function() {
+    if (pressed == true) {
+        $(".bg").removeClass("active");
+        $(".bg").eq(Math.floor(Math.random() * $(".bg").length)).addClass('active');
+    } else {
+        clearInterval(switchInterval);
+    }
+}
+
 var randomGenre = function() {
+    pressed = false;
     $(".bg").removeClass("active");
     randomElement = checkRandomElement($(".bg").length);
     $(".bg").eq(randomElement).addClass('active');
-    pressed = false;
 }
 
 function checkRandomElement(length) {
