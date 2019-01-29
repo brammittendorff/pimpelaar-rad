@@ -9,8 +9,8 @@ $(document).keypress(function(event){
         // pressed enter
         if (pressed == false) {
             pressed = true;
-            switchInterval = setInterval(switchElements, 200);
-            setTimeout(randomGenre, 1000);
+            switchInterval = setInterval(switchElements, 220);
+            setTimeout(randomGenre, 5000);
         }
     }
 });
@@ -18,7 +18,7 @@ $(document).keypress(function(event){
 var switchElements = function() {
     if (pressed == true) {
         $(".bg").removeClass("active");
-        $(".bg").eq(Math.floor(Math.random() * $(".bg").length)).addClass('active');
+        $(".bg").eq(Math.floor(Math.random() * $(".bg").length)).addClass("active");
     } else {
         clearInterval(switchInterval);
     }
@@ -28,7 +28,8 @@ var randomGenre = function() {
     pressed = false;
     $(".bg").removeClass("active");
     randomElement = checkRandomElement($(".bg").length);
-    $(".bg").eq(randomElement).addClass('active');
+    $(".bg").eq(randomElement).fadeIn(3000);
+    $(".bg").eq(randomElement).addClass("active");
 }
 
 function checkRandomElement(length) {
