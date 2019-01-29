@@ -4,6 +4,7 @@ var countElements = 5;
 var switchInterval;
 var speedSwitch = 100;
 var waitBeforeNextGenre = 5000;
+var shots = 7;
 
 $(document).keypress(function(event){
     var keycode = (event.keyCode ? event.keyCode : event.which);
@@ -38,14 +39,16 @@ var randomGenre = function() {
 }
 
 function checkRandomElement(length) {
-    console.log(lastRandomElement);
     tmpRandom = Math.floor(Math.random() * length)
-    if (lastRandomElement.indexOf(tmpRandom) != -1) {
-        return checkRandomElement(length);
-    }
-    lastRandomElement.push(tmpRandom);
-    if (lastRandomElement.length > countElements) {
-        lastRandomElement.shift();
+    // shots
+    if (tmpRandom != shots) {
+        if (lastRandomElement.indexOf(tmpRandom) != -1) {
+            return checkRandomElement(length);
+        }
+        lastRandomElement.push(tmpRandom);
+        if (lastRandomElement.length > countElements) {
+            lastRandomElement.shift();
+        }
     }
     return tmpRandom;
 }
