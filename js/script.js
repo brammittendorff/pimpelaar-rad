@@ -10,6 +10,7 @@ $(document).keypress(function(event){
         if (pressed == false) {
             pressed = true;
             switchInterval = setInterval(switchElements, 220);
+            $(".bg").removeClass("active");
             setTimeout(randomGenre, 5000);
         }
     }
@@ -33,6 +34,7 @@ var randomGenre = function() {
 }
 
 function checkRandomElement(length) {
+    console.log(lastRandomElement);
     tmpRandom = Math.floor(Math.random() * length)
     if (lastRandomElement.indexOf(tmpRandom) != -1) {
         return checkRandomElement(length);
