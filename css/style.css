@@ -17,12 +17,12 @@
 
 .bg {
     position: absolute;
-    display: none;
+    left: -99999px;
     width: 100%;
 }
 
 .bg.active {
-    display: block;
+    left: 0px;
 }
 
 html, body {

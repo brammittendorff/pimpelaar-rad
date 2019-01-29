@@ -29,8 +29,10 @@ var randomGenre = function() {
     pressed = false;
     $(".bg").removeClass("active");
     randomElement = checkRandomElement($(".bg").length);
-    $(".bg").eq(randomElement).fadeIn(3000);
     $(".bg").eq(randomElement).addClass("active");
+    $(".bg").eq(randomElement).fadeOut(50);
+    $(".bg").eq(randomElement).fadeIn(3000);
+
 }
 
 function checkRandomElement(length) {
