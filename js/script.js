@@ -8,7 +8,8 @@ var shots = 7;
 
 $(document).keypress(function(event){
     var keycode = (event.keyCode ? event.keyCode : event.which);
-    if (keycode == 13) {
+    // enter or key 'a'
+    if (keycode == 13 || keycode == 65) {
         // pressed enter
         if (pressed == false) {
             pressed = true;
