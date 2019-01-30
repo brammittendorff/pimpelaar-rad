@@ -42,8 +42,6 @@ var randomGenre = function() {
     }
     tmpImage.src = $(".bg").eq(randomElement).attr('data-bg');
 
-    //$(".bg").eq(randomElement).css("background-image", "url(" + $(".bg").eq(randomElement).attr('data-bg') + ")");
-
     $(".bg").eq(randomElement).fadeOut(50);
     $(".bg").eq(randomElement).fadeIn(3000);
 }

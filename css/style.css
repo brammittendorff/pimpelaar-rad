@@ -17,6 +17,7 @@
 
 .bg {
     background-size: cover;
+    background-position: center;
     height: 100%;
     text-align: center;
     position: absolute;
@@ -35,39 +36,39 @@ html, body {
 
 /* Achtergrond gifjes per genre */
 .bgdiscodip {
-background-color: #470404;
+background-color: #180785;
 }
 
 .bgshotje {
-background-color: #470404;
+background-color: #111922;
 }
 
 .bgrock {
-background-color: #470404;
+background-color: #000000;
 }
 
 .bgclassics {
-background-color: #470404;
+background-color: #090dce;
 }
 
 .bghakkuh {
-background-color: #470404;
+background-color: #342c47;
 }
 
 .bgthuglife {
-background-color: #470404;
+background-color: #9a4ec0;
 }
 
 .bghouse {
-background-color: #470404;
+background-color: #1f2f57;
 }
 
 .bgschuren {
-background-color: #000;
+background-color: #77caa1;
 }
 
 .bgapresski {
-background-color: #470404;
+background-color: #e74d74;
 }
 
 
