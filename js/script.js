@@ -9,11 +9,11 @@ var shots = 7;
 $(document).keypress(function(event){
     var keycode = (event.keyCode ? event.keyCode : event.which);
     // enter or key 'a'
-    console.log(keycode);
     if (keycode == 13 || keycode == 97) {
         // pressed enter
         if (pressed == false) {
             pressed = true;
+            $(".bg").css("background-image", "none");
             switchInterval = setInterval(switchElements, speedSwitch);
             $(".bg").removeClass("active");
             setTimeout(randomGenre, waitBeforeNextGenre);
@@ -35,9 +35,17 @@ var randomGenre = function() {
     $(".bg").removeClass("active");
     randomElement = checkRandomElement($(".bg").length);
     $(".bg").eq(randomElement).addClass("active");
+
+    var tmpImage = new Image();
+    tmpImage.onload = function () {
+        $(".bg").eq(randomElement).css("background-image", "url(" + $(".bg").eq(randomElement).attr('data-bg') + ")");
+    }
+    tmpImage.src = $(".bg").eq(randomElement).attr('data-bg');
+
+    //$(".bg").eq(randomElement).css("background-image", "url(" + $(".bg").eq(randomElement).attr('data-bg') + ")");
+
     $(".bg").eq(randomElement).fadeOut(50);
     $(".bg").eq(randomElement).fadeIn(3000);
-
 }
 
 function checkRandomElement(length) {
