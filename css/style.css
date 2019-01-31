@@ -71,6 +71,9 @@ background-color: #77caa1;
 background-color: #e74d74;
 }
 
+.bgkroegentocht {
+background-color: #ea6348;
+}
 
 
 /* Text effecten per genre */
@@ -148,6 +151,13 @@ h1.rock {
     color: #ffffff;
     text-shadow: 0px 10px #2e0b8e;
     font-family: 'Permanent Marker', cursive;
+}
+
+h1.kroegentocht {
+    font-size: 160px;
+    color: #ffffff;
+    text-shadow: 0px 10px #343946;
+    font-family: 'Eczar', cursive;
 }
 
 h1.hakkuh {
