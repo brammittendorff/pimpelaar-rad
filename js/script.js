@@ -3,7 +3,7 @@ var lastRandomElement = [];
 var countElements = 5;
 var switchInterval;
 var speedSwitch = 100;
-var waitBeforeNextGenre = 5000;
+var waitBeforeNextGenre = 10000;
 var shots = 7;
 
 $(document).keypress(function(event){
