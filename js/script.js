@@ -14,6 +14,10 @@ $(document).keypress(function(event){
     // enter or key 'a'
     if (keycode == 13 || keycode == 97) {
         if ((pressed == false && totalCount >= waitForSeconds) || (shotsFired && pressed == false)) {
+            var bigButtons = document.getElementsByClassName("button");
+            for(var i = 0; i < bigButtons.length; i++) {
+               bigButtons.item(i).style.display = "none";
+            }
             totalCount = 0;
             clearInterval(runCounter);
             switchTotalCounter = setInterval(runCounter, 1000);
@@ -28,6 +32,16 @@ $(document).keypress(function(event){
 
 var runCounter = function() {
     totalCount++;
+    var percentage = Math.ceil(totalCount / waitForSeconds * 100);
+    var activeElement = document.getElementsByClassName("active")[0];
+    var currentProgressBar = activeElement.getElementsByClassName("forward")[0];
+    if (percentage >= 100) {
+        currentBigButton = activeElement.getElementsByClassName("button")[0];
+        currentBigButton.style.display = "block";
+        currentProgressBar.style.width = '100%';
+    } else {
+        currentProgressBar.style.width = percentage.toString() + '%';
+    }
 }
 
 var switchElements = function() {
