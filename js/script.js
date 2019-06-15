@@ -7,7 +7,7 @@ var waitForSeconds = 30;
 var totalCount = waitForSeconds;
 var speedSwitch = 100;
 var waitBeforeNextGenre = 10000;
-var shots = 7;
+var shots = 8;
 
 $(document).keypress(function(event){
     var keycode = (event.keyCode ? event.keyCode : event.which);
