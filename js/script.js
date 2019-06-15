@@ -8,6 +8,7 @@ var totalCount = waitForSeconds;
 var speedSwitch = 100;
 var waitBeforeNextGenre = 10000;
 var shots = 8;
+var switchTotalCounter;
 
 $(document).keypress(function(event){
     var keycode = (event.keyCode ? event.keyCode : event.which);
@@ -19,7 +20,8 @@ $(document).keypress(function(event){
                bigButtons.item(i).style.display = "none";
             }
             totalCount = 0;
-            clearInterval(runCounter);
+            clearInterval(switchTotalCounter);
+            clearInterval(switchInterval);
             switchTotalCounter = setInterval(runCounter, 1000);
             pressed = true;
             $(".bg").css("background-image", "none");
