@@ -3,7 +3,7 @@ var lastRandomElement = [];
 var shotsFired = false;
 var countElements = 5;
 var switchInterval;
-var waitForSeconds = 30;
+var waitForSeconds = 900;
 var totalCount = waitForSeconds;
 var speedSwitch = 100;
 var waitBeforeNextGenre = 10000;
