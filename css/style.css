@@ -35,7 +35,7 @@
     position: absolute;
     left: 10%;
     margin-top: 30px;
-    border: 5px solid #ccc;
+    border: 5px solid #fff;
     width: 80%;
     height: 50px;
 }
@@ -43,7 +43,7 @@
 .forward {
     height: 100%;
     width: 0%;
-    background: #fff;
+    background: #ff0000;
 }
 
 .bg.active {
@@ -182,10 +182,10 @@ h1.kroegentocht {
 h1.hakkuh {
     font-size: 160px;
     color: #ffffff;
-    text-shadow: 0px 10px #ff6c7a;
+    text-shadow: 0px 10px #00b32c;
     font-family: 'Sniglet', cursive;
        -webkit-text-stroke-width: 4px;
-   -webkit-text-stroke-color: #920090;
+   -webkit-text-stroke-color: #09d15d;
 }
 
 h1.classics {
@@ -201,7 +201,6 @@ h1.classics {
     text-align: center;
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
-    text-shadow: 0 0 10px rgb(255,17,119) , 0 0 20px rgb(2255,17,119) , 0 0 30px rgb(255,17,119) , 0 0 40px rgb(255,17,119) , 0 0 70px rgb(255,17,119) , 0 0 80px rgb(255,17,119) , 0 0 100px rgb(255,17,119) , 0 0 150px rgb(255,17,119) ;
   -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
   -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
   -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
